@@ -1,0 +1,21 @@
+.app {
+  scroll-snap-type: y proximity;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.one,
+.three {
+  background-color: rgb(89, 89, 160);
+}
+
+.two,
+.four {
+  background-color: rgb(211, 161, 95);
+}
