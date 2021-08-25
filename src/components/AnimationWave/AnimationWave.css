@@ -1,0 +1,5 @@
+.animation-wave {
+  position: absolute;
+  top: -13px;
+  transform: rotate(180deg);
+}
