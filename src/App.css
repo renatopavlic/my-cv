@@ -6,7 +6,6 @@
 
 section {
   height: 100vh;
-  color: white;
   scroll-snap-align: start;
 }
 
