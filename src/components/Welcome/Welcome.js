@@ -1,11 +1,11 @@
 import React from "react";
 import { AnimationWave } from "../AnimationWave";
-
-import "./Welcome.css";
+import { CursorAnimation } from "../CursorAnimation";
 
 const Welcome = () => {
   return (
     <section className="welcome">
+      <div />
       <AnimationWave
         fill="#66FCF1"
         paused={false}
@@ -14,8 +14,9 @@ const Welcome = () => {
         speed={0.3}
         points={2}
       />
-      <h4 style={{ paddingTop: "30vh" }}>
-        Welcome to <span>portfolio website</span> of an aspiring{" "}
+      <CursorAnimation />
+      <h4>
+        Welcome to the<span> portfolio website</span> of an aspiring{" "}
         <span>web developer</span> looking to <span>learn</span> and{" "}
         <span>create</span>.
       </h4>

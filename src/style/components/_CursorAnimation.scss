@@ -1,0 +1,16 @@
+.cursor-animation-text {
+  max-width: 80vw;
+  color: $text-gray;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  span {
+    border-right: 0.05em solid $primary-blue;
+    animation: caret 1s steps(1) infinite;
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
