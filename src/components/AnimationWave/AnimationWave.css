@@ -2,4 +2,6 @@
   position: absolute;
   top: -13px;
   transform: rotate(180deg);
+  height: 20vh;
+  padding-top: 2vh;
 }

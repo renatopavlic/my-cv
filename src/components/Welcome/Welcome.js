@@ -6,15 +6,19 @@ import "./Welcome.css";
 const Welcome = () => {
   return (
     <section className="welcome">
-      <h2>Welcome section</h2>
       <AnimationWave
         fill="#66FCF1"
         paused={false}
-        height={10}
-        amplitude={30}
-        speed={0.2}
-        points={3}
+        height={20}
+        amplitude={60}
+        speed={0.3}
+        points={2}
       />
+      <h4 style={{ paddingTop: "30vh" }}>
+        Welcome to <span>portfolio website</span> of an aspiring{" "}
+        <span>web developer</span> looking to <span>learn</span> and{" "}
+        <span>create</span>.
+      </h4>
     </section>
   );
 };

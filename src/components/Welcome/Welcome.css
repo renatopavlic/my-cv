@@ -1,4 +1,6 @@
-.welcome {
+.welcome span {
+  color: #66fcf1;
+  font-family: "Rampart One", cursive;
   /*
   background-color: #0b0c10;
   light-black #1F2833
