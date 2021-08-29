@@ -10,7 +10,7 @@ const CursorAnimation = () => {
         typeWriter(text, i + 1, fnCallback);
       }, 100);
     } else if (typeof fnCallback == "function") {
-      setTimeout(fnCallback, 700);
+      setTimeout(fnCallback, 1500);
     }
   }, []);
 
@@ -18,14 +18,12 @@ const CursorAnimation = () => {
     (i) => {
       const dataText = [
         "Hi, my name is Renato",
-        "I'm a web developer.",
-        "My passion is to create",
-        "beautiful, responsive and moder",
-        "web application using newest technologies.",
+        "I'm a web developer from Croatia",
+        "Welcome to my website :)",
       ];
 
       if (typeof dataText[i] == "undefined") {
-        return StartTextAnimation(0);
+        return setTimeout(() => StartTextAnimation(0), 3000);
       }
 
       if (i < dataText[i].length) {
@@ -43,7 +41,9 @@ const CursorAnimation = () => {
 
   return (
     <div className="cursor-animation">
-      <h1 className="cursor-animation-text">Nešto bezveze</h1>
+      <h1 className="cursor-animation-text">
+        Hello there, welcome to my website
+      </h1>
     </div>
   );
 };
