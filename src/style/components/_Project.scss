@@ -1,0 +1,46 @@
+.project {
+  @include flex-column;
+  margin: 4vh 0;
+  width: 1200px;
+  background: linear-gradient($primary, $secondary);
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(69, 162, 158, 0.16),
+    0 3px 6px rgba(102, 252, 241, 0.23);
+  /* box-shadow: 0 19px 38px rgba(69, 162, 158, 0.3),
+    0 15px 12px rgba(102, 252, 241, 0.22); */
+  a {
+    text-decoration: none;
+  }
+  &-img {
+    padding-top: 2vh;
+    height: 20vh;
+    width: 20vw;
+  }
+  &-title {
+    color: $primary-blue;
+    font-weight: $bold-font;
+  }
+  &-description {
+    padding: 2vh 4vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .project {
+    font-size: $mobile-font;
+    width: 300px;
+    &-img {
+      padding-top: 2vh;
+      width: 50vw;
+    }
+    /*  &-title {
+    }
+    &-link {
+    }
+    &-img {
+    } */
+    &-description {
+      font-size: 1rem;
+    }
+  }
+}
